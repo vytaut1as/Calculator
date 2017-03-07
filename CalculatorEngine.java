@@ -10,8 +10,11 @@ public class CalculatorEngine implements IBasicFunctionality, Itrigonometrija {
     public void ivesk(){
     	System.out.println("Ivesk du skaicius operacijai");
     	a= reader.nextDouble();
-    	b= reader.nextDouble();
-    	
+    	b= reader.nextDouble();    	
+    }
+    public void iveskForSin(){
+    	System.out.println("Ivesk skaicius operacijai");
+    	a= reader.nextDouble();   	
     }
 
     @Override
@@ -22,45 +25,49 @@ public class CalculatorEngine implements IBasicFunctionality, Itrigonometrija {
 
     @Override
     public double subtract() {
+    	ivesk();
         return a - b;
     }
 
     @Override
     public double multiply() {
+    	ivesk();
         return a * b;
     }
 
     @Override
     public double divide() {
+    	ivesk();
         return a / b;
     }
 
     @Override
     public double power() {
+    	ivesk();
         return Math.pow(a, b);
     }
 
 	@Override
 	public double makeSin() {
-		// TODO Auto-generated method stub
+		iveskForSin();
 		return Math.sin(Math.toRadians(a));
 	}
 
 	@Override
 	public double makeCos() {
-		// TODO Auto-generated method stub
+		iveskForSin();
 		return Math.cos(Math.toRadians(a));
 	}
 
 	@Override
 	public double makeTg() {
-		// TODO Auto-generated method stub
+		iveskForSin();
 		return Math.tan(Math.toRadians(a));
 	}
 
 	@Override
 	public double makeCtg() {
-		// TODO Auto-generated method stub
+		iveskForSin();
 		return 1 / Math.tan(Math.toRadians(a));
 	}
 	public void printInstruction(){
@@ -71,6 +78,11 @@ public class CalculatorEngine implements IBasicFunctionality, Itrigonometrija {
                 + "* to Multiply \n"
                 + "/ to Divide \n"
                 + "^ to Power ApowB \n"
+                + "================ \n"
+                + "sin to Sinus \n"
+                + "cos to Cosinus \n"
+                + "tan to Tangent \n"
+                + "ctan to Ctangent \n"
                 + "================ \n"
                 + "i to print instructions \n"
                 + "x to exit \n");
