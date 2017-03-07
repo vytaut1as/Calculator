@@ -52,4 +52,16 @@ public class CalculatorEngine implements IBasicFunctionality, Itrigonometrija {
 		// TODO Auto-generated method stub
 		return 1 / Math.tan(Math.toRadians(a));
 	}
+	public void printInstruction(){
+        System.out.println("Instructions: \n" +
+                "Yuo can use\n"
+                + "+ to Add \n"
+                + "- to Subtract \n"
+                + "* to Multiply \n"
+                + "/ to Divide \n"
+                + "^ to Power ApowB \n"
+                + "================ \n"
+                + "i to print instructions \n"
+                + "x to exit \n");
+    }
 }
