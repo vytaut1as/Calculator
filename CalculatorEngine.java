@@ -1,11 +1,22 @@
+import java.util.Scanner;
 
 public class CalculatorEngine implements IBasicFunctionality, Itrigonometrija {
 
     private double a;
     private double b;
 
+	Scanner reader = new Scanner(System.in);
+    
+    public void ivesk(){
+    	System.out.println("Ivesk du skaicius operacijai");
+    	a= reader.nextDouble();
+    	b= reader.nextDouble();
+    	
+    }
+
     @Override
     public double add() {
+    	ivesk();
         return a + b;
     }
 
