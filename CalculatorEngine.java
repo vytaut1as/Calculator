@@ -78,7 +78,6 @@ public class CalculatorEngine implements IBasicFunctionality, Itrigonometrija {
                 + "* to Multiply \n"
                 + "/ to Divide \n"
                 + "^ to Power ApowB \n"
-                + "================ \n"
                 + "sin to Sinus \n"
                 + "cos to Cosinus \n"
                 + "tan to Tangent \n"
