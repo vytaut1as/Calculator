@@ -2,11 +2,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+    	
 		Scanner reader = new Scanner(System.in);
-        CalculatorEngine calculator = new CalculatorEngine();
-        double answer = 0;
-        double inputA, inputB;
-        
+        CalculatorEngine calculator = new CalculatorEngine();        
         
         calculator.printInstruction();
 
